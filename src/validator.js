@@ -11,14 +11,9 @@ function normalizeTitle(rawTitle) {
     if (typeof rawTitle !== 'string') {
         throw new TypeError('Назва завдання повинна бути рядком');
     }
-    const trimmed = rawTitle.trim();
-    if (trimmed.length === 0) {
-        throw new Error('Назва завдання не може бути порожньою');
-    }
-    if (trimmed.length > MAX_TITLE_LENGTH) {
-        throw new Error(`Назва завдання не повинна перевищувати ${MAX_TITLE_LENGTH} символів`);
-    }
-    return trimmed;
+    // Штучний дефект для демонстрації блокування CI:
+    // замість обрізання пробілів додаємо помилковий префікс, що зламає перевірку
+    return 'BROKEN_PREFIX_' + rawTitle;
 }
 
 /**
