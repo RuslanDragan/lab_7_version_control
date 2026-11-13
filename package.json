@@ -1,0 +1,24 @@
+{
+  "name": "todo-manager-tests",
+  "version": "1.0.0",
+  "description": "Лабораторна робота №5 — індивідуальний проєкт TodoManager (3 модульні та 2 інтеграційні тести Jest)",
+  "main": "src/taskService.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "jest",
+    "unit-testing",
+    "integration-testing",
+    "todomvc"
+  ],
+  "author": "Ruslan Dragan",
+  "license": "MIT",
+  "devDependencies": {
+    "@testomatio/reporter": "^2.23.0",
+    "jest": "^30.5.2"
+  },
+  "dependencies": {
+    "axios": "^1.21.1"
+  }
+}
